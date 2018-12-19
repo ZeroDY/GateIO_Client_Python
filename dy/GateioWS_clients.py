@@ -1,23 +1,19 @@
 # coding=utf-8
 
 ## 多个连接
+import json
 import random
 import threading
-from threading import Thread
-from dao import pushNotifications
-from flask import json, current_app
+import websocket
+import time
+import ssl
 
-from threadpool import ThreadPool, makeRequests
+from dao import pushNotifications
+from dao import GateDao
 
 # from manager.models import GateKline, GateKlineSchema
 # from manager import gateDao
 
-# klines_schema = GateKlineSchema(many=True)
-# kline_schema = GateKlineSchema()
-
-import websocket
-import time
-import ssl
 
 try:
     import thread
@@ -37,6 +33,7 @@ def on_message(ws, message):
                   ws.pair_name,
                   '更新 ***', len(list), '***',
                   list)
+            GateDao.update_klines(list, ws.pair_name, ws.group_sec)
 
         elif 'result' in result_json  and result_json['result'] == 'success':
             print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
@@ -65,6 +62,8 @@ def on_message(ws, message):
                       '继续查询 +++',
                       len(result_json['result']))
 
+                GateDao.update_klines(result_json['result'], ws.pair_name, ws.group_sec)
+
             else:
                 ws.method = 'kline.subscribe'
                 send_info = '{"id":%d, "method":"%s", "params":["%s", %d]}' \
@@ -74,6 +73,8 @@ def on_message(ws, message):
                         ws.id , '*',
                       '结束查询 ---',
                       len(result_json['result']))
+
+                GateDao.update_klines(result_json['result'], ws.pair_name, ws.group_sec)
 
 
             ws.send(send_info)
@@ -91,6 +92,7 @@ def on_close(ws):
     print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) ,"### +++++++++++++ closed +++++++++++++ ###", ws)
     # alert = " closed ----- %s" % ws.pair_name
     # pushNotifications.all(alert=alert)
+
 
 def on_ping(ws):
     send_info = '{"id":%d, "method":"server.ping", "params":[]}' % ws.id
@@ -146,6 +148,8 @@ def on_start(pair_name):
 
 from threadpool import ThreadPool, makeRequests
 if __name__ == "__main__":
+
+
     # init_logging()
     pool = ThreadPool(10)
     test = ['BTC_USDT','EOS_USDT', 'ETH_USDT']
