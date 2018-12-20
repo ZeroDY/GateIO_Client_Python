@@ -45,7 +45,7 @@ def object_merge(element):
 
 
 
-def insert_obj(  element):
+def insert_obj(element):
     '''
     单条插入mysql数据库
     '''
@@ -154,7 +154,7 @@ def insert_klines(dic_list, pair_name):
                 return None
 
 
-def query_klines(  pair_name, num=1440, endtime = int(time.time())):
+def query_klines(pair_name, num=1440, endtime = int(time.time())):
     '''
     :param pair_name:
     :param num:

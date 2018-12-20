@@ -3,8 +3,9 @@
 
 import time
 
-from sqlalchemy import Column, String, Integer, Float, create_engine, ForeignKey, PrimaryKeyConstraint, Index
+from sqlalchemy import Column, String, Integer, create_engine, ForeignKey, PrimaryKeyConstraint, Index
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.dialects.mysql import DOUBLE
 from sqlalchemy.ext.declarative import declarative_base
 # from MySQLdb import *
 
@@ -20,9 +21,9 @@ class GatePair(BaseModel):
     __tablename__ = 'gate_pair'
 
     pair_name = Column(String(64), primary_key=True, nullable=False, index=True)
-    decimal_places = Column(Integer) # 价格精度
-    min_amount = Column(Float) # 最小下单量
-    fee = Column(Float) # 交易费 百分数
+    decimal_places = Column(Integer()) # 价格精度
+    min_amount = Column(DOUBLE()) # 最小下单量
+    fee = Column(DOUBLE()) # 交易费 百分数
     autosync = Column(Integer, default=0)
 
     def __init__(self,pair_name):
@@ -42,13 +43,13 @@ class GateKline(BaseModel):
 
     pair_name = Column(String(64), nullable=False)
     timestamp = Column(Integer(), nullable=False) # 时间戳
-    volume = Column(Float, nullable=False) #  交易量
-    close = Column(Float, nullable=False) #  收盘价
-    high = Column(Float, nullable=False) #  最高价
-    low = Column(Float, nullable=False) #  最低价
-    open = Column(Float, nullable=False) #  开盘价
-    group_sec = Column(Integer, nullable=False) # 时间间隔 秒数
-    amount = Column(Float) # amount
+    volume = Column(DOUBLE(), nullable=False) #  交易量
+    close = Column(DOUBLE(), nullable=False) #  收盘价
+    high = Column(DOUBLE(), nullable=False) #  最高价
+    low = Column(DOUBLE(), nullable=False) #  最低价
+    open = Column(DOUBLE(), nullable=False) #  开盘价
+    group_sec = Column(Integer(), nullable=False) # 时间间隔 秒数
+    amount = Column(DOUBLE()) # amount
     timestr = Column(String(64))
 
     def __init__(self, pair_name):
@@ -78,8 +79,8 @@ class GateKline(BaseModel):
 # class GatePairSchema(ma.Schema):
 #     pair_name = fields.String(required=True)
 #     decimal_places = fields.Integer()
-#     min_amount = fields.Float()
-#     fee = fields.Float()
+#     min_amount = fields.DOUBLE()
+#     fee = fields.DOUBLE()
 #     autosync = fields.Integer()
 #
 #
@@ -88,12 +89,12 @@ class GateKline(BaseModel):
 #
 #     pair_name = fields.String(required=True)
 #     timestamp = fields.Integer()
-#     volume = fields.Float()
-#     close = fields.Float()
-#     high = fields.Float()
-#     low = fields.Float()
-#     open = fields.Float()
+#     volume = fields.DOUBLE()
+#     close = fields.DOUBLE()
+#     high = fields.DOUBLE()
+#     low = fields.DOUBLE()
+#     open = fields.DOUBLE()
 #     group_sec = fields.Integer()
-#     amount = fields.Float()
+#     amount = fields.DOUBLE()
 #     timestr = fields.String()
 

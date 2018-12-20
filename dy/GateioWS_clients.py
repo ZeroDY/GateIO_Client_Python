@@ -131,7 +131,7 @@ def on_start(pair_name):
     timestamp = int(time.time())
     ws.id = random.randint(1500000000, timestamp)
     ws.pair_name = pair_name     #'EOS_USDT'
-    ws.start = timestamp - 21600  # 216000
+    ws.start = 1540024773 #timestamp - 216000  # 216000
     ws.method = 'kline.query'    # 'kline.subscribe'#
     ws.group_sec = 60
     ws.autosync = True
@@ -150,9 +150,8 @@ from threadpool import ThreadPool, makeRequests
 if __name__ == "__main__":
 
 
-    # init_logging()
-    pool = ThreadPool(10)
-    test = ['BTC_USDT','EOS_USDT', 'ETH_USDT']
+    pool = ThreadPool(5)
+    test = ['EOS_USDT']#['BTC_USDT','EOS_USDT', 'ETH_USDT']
     requests = makeRequests(on_start, test)
     [pool.putRequest(req) for req in requests]
     pool.wait()
