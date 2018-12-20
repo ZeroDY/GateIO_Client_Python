@@ -166,7 +166,7 @@ def query_klines(pair_name, num=1440, endtime = int(time.time())):
         print('*******' + str(endtime))
         kline_list = session.query(GateKline).filter(and_(GateKline.pair_name == pair_name.upper(),
                                                              GateKline.timestamp <= endtime)).order_by(GateKline.timestamp.desc()).limit(num)
-        return kline_list
+        return kline_list[::-1]
     return []
 
 

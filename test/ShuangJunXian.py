@@ -1,3 +1,5 @@
+import time
+
 from matplotlib import pylab
 import matplotlib.pyplot as plt
 import numpy as np
@@ -16,9 +18,9 @@ def get_price():
     获取 DataFrame 数据
     :return:
     '''
-    kline_list = GateDao.query_klines(pair_name='EOS_USDT', num=60000)
+    kline_list = GateDao.query_klines(pair_name='EOS_USDT', num=50000)
 
-    # kline_list = GateDao.query_all_objects(GateKline)
+    # kline_list = GateDao.query_all_objects(GateKline)#[39000:-1]
     return pd.DataFrame({
         'closePrice': [float(kline.close) for kline in kline_list],
         'tradeDate': [kline.timestr for kline in kline_list]
@@ -27,7 +29,7 @@ def get_price():
 
 
 #获取基金行情信息
-security = get_price() #DataAPI.MktFunddGet(secID=secID,beginDate=start,endDate=end,field=['tradeDate','closePrice'])
+security = get_price()
 security['tradeDate']=pd.to_datetime(security['tradeDate'])
 security.info()
 
@@ -35,8 +37,8 @@ security.info()
 # sns.despine()
 
 window_short = 200 #月均线,短期均线
-window_long = 1400 #半年线,长期均线
-SD = 0.003 #偏离度阈值5%
+window_long = 1500 #半年线,长期均线
+SD = 0.005 #偏离度阈值5%
 
 #numpy内置移动平均函数:rolling_mean
 security['short_window'] = np.round(security['closePrice'].rolling(window_short).mean(),2)
@@ -44,10 +46,10 @@ security['long_window'] = np.round(security['closePrice'].rolling(window_long).m
 
 print(security[['closePrice','short_window','long_window']].tail())
 
-#将三条线画到一张图上
-security[['closePrice','short_window','long_window']].plot(grid=False,figsize=(12,8))
-sns.despine()
-pylab.show()
+# #将三条线画到一张图上
+# security[['closePrice','short_window','long_window']].plot(grid=False,figsize=(18,10))
+# sns.despine()
+# pylab.show()
 
 #定义信号
 #计算短期均线与长期均线的差s-1
@@ -67,7 +69,13 @@ security['Market'] = np.log(security['closePrice'] / security['closePrice'].shif
 security['Strategy'] = security['Regime'].shift(1) * security['Market']
 security[['Market', 'Strategy', 'Regime']].tail()
 
-security[['Market', 'Strategy']].cumsum().apply(np.exp).plot(grid=False, figsize=(12,8))
+security[['Market', 'Strategy']].cumsum().apply(np.exp).plot(grid=False, figsize=(18,10))
 sns.despine()
+
+textStr = ' num = %d \n window_short = %d \n window_long = %d \n SD = %f' \
+          % (len(security), window_short, window_long, SD)
+plt.text(0, 0.5, textStr, fontsize=15)
+
+pylab.savefig('%s_%d_%d_%d_%f.png' % (time.strftime('%Y%m%d_%H:%M:%S',time.localtime(time.time())),len(security), window_short, window_long, SD))
 
 pylab.show()
