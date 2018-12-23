@@ -13,6 +13,18 @@ from sqlalchemy.ext.declarative import declarative_base
 
 BaseModel = declarative_base()
 
+class MyTrade(BaseModel):
+    '''我的交易'''
+
+    __tablename__ = 'my_trade'
+    tid = Column(Integer(),autoincrement=True, primary_key=True)
+    pair_name = Column(String(64), nullable=False)
+    short = Column(Integer())
+    long = Column(Integer())
+    middle = Column(Integer())
+    times = Column(Integer())
+    lucre = Column(DOUBLE())
+
 
 class GatePair(BaseModel):
     '''
