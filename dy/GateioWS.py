@@ -104,7 +104,7 @@ ws = websocket.WebSocketApp("wss://ws.gate.io/v3/",
 
 ws.id = int(time.time()) - 1545202554
 ws.pair_name = 'EOS_USDT'
-ws.start = int(time.time()) - 21600# 216000
+ws.start = 1545317340 #int(time.time()) - 21600# 216000
 ws.method = 'kline.query'   #'kline.subscribe'#
 ws.group_sec = 60
 ws.autosync = True

@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3748d158-63c7-4e28-bc11-b5ba3a6e99a6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/test/LucrePic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dy/adx_dmi_stock.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dy/adx_dmi_stock.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/ShuangJunXian01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/GateIO_Client_Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GateIO_Client_Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/Models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dao/Models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/GateDao.py" beforeDir="false" afterPath="$PROJECT_DIR$/dao/GateDao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dy/GateioWS.py" beforeDir="false" afterPath="$PROJECT_DIR$/dy/GateioWS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dy/GateioWS_clients.py" beforeDir="false" afterPath="$PROJECT_DIR$/dy/GateioWS_clients.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/20181221_15:41:19_50000_200_1500_0.005000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/20181221_16:36:23_50000_200_1500_0.005000.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test/ShuangJXRun.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/ShuangJXRun.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ShuangJunXian.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/ShuangJunXian.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,54 +25,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/GateIO_Client_Python$GateioWS_clients.coverage" NAME="GateioWS_clients Coverage Results" MODIFIED="1545316308829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dy" />
-    <SUITE FILE_PATH="coverage/GateIO_Client_Python$GateioWS.coverage" NAME="GateioWS Coverage Results" MODIFIED="1545210705498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dy" />
+    <SUITE FILE_PATH="coverage/GateIO_Client_Python$GateioWS.coverage" NAME="GateioWS Coverage Results" MODIFIED="1546785238515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dy" />
+    <SUITE FILE_PATH="coverage/GateIO_Client_Python$GateioWS_clients.coverage" NAME="GateioWS_clients Coverage Results" MODIFIED="1546964643057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dy" />
     <SUITE FILE_PATH="coverage/GateIO_Client_Python$Client.coverage" NAME="Client Coverage Results" MODIFIED="1545203533470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gateio" />
-    <SUITE FILE_PATH="coverage/GateIO_Client_Python$ShuangJunXian.coverage" NAME="ShuangJunXian Coverage Results" MODIFIED="1545381370173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/GateIO_Client_Python$ShuangJXRun.coverage" NAME="ShuangJXRun Coverage Results" MODIFIED="1545536984223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/GateIO_Client_Python$LucrePic.coverage" NAME="LucrePic Coverage Results" MODIFIED="1545578254706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/GateIO_Client_Python$ShuangJXRun.coverage" NAME="ShuangJXRun Coverage Results" MODIFIED="1546847917731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/GateIO_Client_Python$ShuangJunXian.coverage" NAME="ShuangJunXian Coverage Results" MODIFIED="1546970527442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/GateIO_Client_Python$LucrePic.coverage" NAME="LucrePic Coverage Results" MODIFIED="1546969826926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/GateIO_Client_Python$GateDao.coverage" NAME="GateDao Coverage Results" MODIFIED="1545316275626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dao" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GateioWS_clients.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dy/GateioWS_clients.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1812">
-              <caret line="130" column="32" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="32" />
-              <folding>
-                <element signature="e#24#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ShuangJXRun.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/ShuangJXRun.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1425">
-              <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
-              <folding>
-                <element signature="e#2#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShuangJunXian.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/ShuangJunXian.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LucrePic.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/LucrePic.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="851">
+              <caret line="67" selection-start-line="67" selection-end-line="73" selection-end-column="33" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -71,22 +47,85 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="axes3d.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/mpl_toolkits/mplot3d/axes3d.py">
+      <file leaf-file-name="GateDao.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/GateDao.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="2323" column="8" selection-start-line="2323" selection-start-column="8" selection-end-line="2328" selection-end-column="43" />
+            <state relative-caret-position="618">
+              <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+              <folding>
+                <element signature="e#2#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GateDao.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/GateDao.py">
+      <file leaf-file-name="ShuangJunXian.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/ShuangJunXian.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3192">
-              <caret line="168" column="25" selection-start-line="168" selection-start-column="25" selection-end-line="168" selection-end-column="25" />
+            <state relative-caret-position="494">
+              <caret line="26" selection-start-line="26" selection-end-line="27" />
               <folding>
-                <element signature="e#2#29#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShuangJunXian01.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/ShuangJunXian01.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2185">
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="backend_agg.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/backends/backend_agg.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="529" selection-start-line="529" selection-end-line="529" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="umath.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-1625016946/numpy/core/umath.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="417">
+              <caret line="1399" column="7" selection-start-line="1399" selection-start-column="4" selection-end-line="1399" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="heuristics.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pip/_vendor/cachecontrol/heuristics.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="417">
+              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="core.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/numpy/ma/core.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95133">
+              <caret line="5013" column="8" selection-start-line="5013" selection-start-column="8" selection-end-line="5013" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LucrePic.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/LucrePic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,19 +135,10 @@
         <entry file="file://$PROJECT_DIR$/dao/Models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="475">
-              <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
               <folding>
                 <element signature="e#43#54#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="operators.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/operators.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17613">
-              <caret line="932" column="61" selection-start-line="932" selection-start-column="61" selection-end-line="932" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -131,8 +161,13 @@
       <find>Float</find>
       <find>get_price</find>
       <find>precision=20, scale=10</find>
-      <find>pylab</find>
       <find>21600</find>
+      <find>360</find>
+      <find>pushNotifications</find>
+      <find>float64</find>
+      <find>plot</find>
+      <find>plt</find>
+      <find>pylab</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -143,14 +178,17 @@
       <list>
         <option value="$PROJECT_DIR$/Client.py" />
         <option value="$PROJECT_DIR$/my/GateioWS.py" />
-        <option value="$PROJECT_DIR$/dy/GateioWS.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/dao/Models.py" />
+        <option value="$PROJECT_DIR$/test/LucrePic.py" />
+        <option value="$PROJECT_DIR$/dy/GateioWS.py" />
+        <option value="$PROJECT_DIR$/test/ShuangJXRun.py" />
+        <option value="$PROJECT_DIR$/dy/adx_dmi_stock.py" />
+        <option value="$PROJECT_DIR$/dy/adx_dmi_stock.ini" />
         <option value="$PROJECT_DIR$/dy/GateioWS_clients.py" />
         <option value="$PROJECT_DIR$/dao/GateDao.py" />
+        <option value="$PROJECT_DIR$/test/ShuangJunXian01.py" />
         <option value="$PROJECT_DIR$/test/ShuangJunXian.py" />
-        <option value="$PROJECT_DIR$/dao/Models.py" />
-        <option value="$PROJECT_DIR$/test/ShuangJXRun.py" />
-        <option value="$PROJECT_DIR$/test/LucrePic.py" />
       </list>
     </option>
   </component>
@@ -164,9 +202,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1833" />
+    <option name="x" value="-1960" />
     <option name="y" value="-236" />
-    <option name="width" value="1833" />
+    <option name="width" value="1960" />
     <option name="height" value="1375" />
   </component>
   <component name="ProjectView">
@@ -174,7 +212,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,37 +241,20 @@
             </path>
             <path>
               <item name="GateIO_Client_Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GateIO_Client_Python" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GateIO_Client_Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GateIO_Client_Python" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GateIO_Client_Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GateIO_Client_Python" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="python3.6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GateIO_Client_Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -257,8 +277,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.LucrePic">
-    <configuration name="GateDao" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.ShuangJunXian">
+    <configuration name="GateioWS" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="GateIO_Client_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -266,12 +286,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dao" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dy" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dao/GateDao.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dy/GateioWS.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -356,17 +376,17 @@
     <list>
       <item itemvalue="Python.GateioWS_clients" />
       <item itemvalue="Python.ShuangJunXian" />
-      <item itemvalue="Python.GateDao" />
       <item itemvalue="Python.ShuangJXRun" />
       <item itemvalue="Python.LucrePic" />
+      <item itemvalue="Python.GateioWS" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.LucrePic" />
-        <item itemvalue="Python.ShuangJXRun" />
         <item itemvalue="Python.ShuangJunXian" />
+        <item itemvalue="Python.LucrePic" />
         <item itemvalue="Python.GateioWS_clients" />
-        <item itemvalue="Python.GateDao" />
+        <item itemvalue="Python.ShuangJXRun" />
+        <item itemvalue="Python.GateioWS" />
       </list>
     </recent_temporary>
   </component>
@@ -384,22 +404,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1833" y="-236" width="1833" height="1375" extended-state="0" />
+    <frame x="-1960" y="-236" width="1960" height="1375" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" x="0" y="0" width="440" height="1175" id="Documentation" side_tool="true" weight="0.3295099" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" x="-2560" y="-214" width="915" height="1353" id="Run" order="2" type="WINDOWED" visible="true" weight="0.22045454" />
+      <window_info anchor="bottom" x="-2560" y="-214" width="1212" height="1353" id="Run" order="2" type="WINDOWED" visible="true" weight="0.22045454" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32954547" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32942098" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.23474178" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.186488" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26694474" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" auto_hide="true" x="-2536" y="-114" width="1070" height="1254" id="SciView" order="3" show_stripe_button="false" type="FLOATING" weight="0.32883146" />
+      <window_info anchor="right" x="-2536" y="-114" width="1070" height="1254" id="SciView" order="3" weight="0.32883146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.36932707" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.0023474179" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -428,107 +449,23 @@
           <line>59</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/ShuangJXRun.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="17" />
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="22" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dy/GateioWS_clients.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1444">
-          <caret line="92" column="40" lean-forward="true" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateio/Gateio.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="41" column="66" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
-          <folding>
-            <element signature="e#40#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/pushNotifications.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateio/Client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="42" column="61" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sqlalchemy/sql/sqltypes.py" />
-    <entry file="file://$PROJECT_DIR$/dy/GateioWS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/dao/GateDao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1177">
-          <caret line="139" column="22" lean-forward="true" selection-start-line="139" selection-start-column="22" selection-end-line="139" selection-end-column="22" />
-          <folding>
-            <element signature="e#2#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/Models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="878">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="e#43#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dy/GateioWS_clients.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-313">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateio/Client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="42" column="61" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dy/GateioWS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/pushNotifications.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -636,16 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gateio/Gateio.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="41" column="66" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
-          <folding>
-            <element signature="e#40#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -666,20 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dy/GateioWS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateio/Client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="42" column="61" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/operators.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17613">
@@ -688,66 +601,192 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/1545322404_50000_200_1500_0.005000.png" />
-    <entry file="file://$PROJECT_DIR$/dao/GateDao.py">
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/mpl_toolkits/mplot3d/axes3d.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3192">
-          <caret line="168" column="25" selection-start-line="168" selection-start-column="25" selection-end-line="168" selection-end-column="25" />
+        <state relative-caret-position="43719">
+          <caret line="2323" column="8" selection-start-line="2323" selection-start-column="8" selection-end-line="2328" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateio/Gateio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="41" column="66" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
           <folding>
-            <element signature="e#2#29#0" expanded="true" />
+            <element signature="e#40#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/20181221_16:36:23_50000_200_1500_0.005000.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/20181221_15:41:19_50000_200_1500_0.005000.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dy/adx_dmi_stock.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateio/Client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="42" column="61" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dy/adx_dmi_stock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8892">
+          <caret line="479" column="26" selection-start-line="479" selection-start-column="26" selection-end-line="479" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/window.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="683" column="8" selection-start-line="683" selection-start-column="8" selection-end-line="683" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/numpy/core/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2472">
+          <caret line="2037" column="7" selection-start-line="2037" selection-end-line="2037" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="7068" column="12" selection-start-line="7068" selection-start-column="12" selection-end-line="7068" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="2839" column="4" selection-start-line="2839" selection-start-column="4" selection-end-line="2839" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="698" column="11" selection-start-line="698" selection-start-column="4" selection-end-line="698" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dy/GateioWS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1448">
+          <caret line="58" column="27" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
+          <folding>
+            <element signature="e#15#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dy/GateioWS_clients.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1812">
-          <caret line="130" column="32" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="32" />
+        <state relative-caret-position="902">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/ShuangJXRun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="67" selection-start-line="67" selection-end-line="73" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/numpy/ma/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95133">
+          <caret line="5013" column="8" selection-start-line="5013" selection-start-column="8" selection-end-line="5013" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pip/_vendor/cachecontrol/heuristics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-1625016946/numpy/core/umath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="1399" column="7" selection-start-line="1399" selection-start-column="4" selection-end-line="1399" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/img/LTC_USDT_45278_360_1080_0.005000.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file:///usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/backends/backend_agg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="529" selection-start-line="529" selection-end-line="529" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dao/Models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
-          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
           <folding>
             <element signature="e#43#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ShuangJunXian.py">
+    <entry file="file://$PROJECT_DIR$/dao/GateDao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/mpl_toolkits/mplot3d/axes3d.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="2323" column="8" selection-start-line="2323" selection-start-column="8" selection-end-line="2328" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ShuangJXRun.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+        <state relative-caret-position="618">
+          <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
           <folding>
-            <element signature="e#2#20#0" expanded="true" />
+            <element signature="e#2#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/LucrePic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="439">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ShuangJunXian01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2185">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ShuangJunXian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" selection-start-line="26" selection-end-line="27" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>

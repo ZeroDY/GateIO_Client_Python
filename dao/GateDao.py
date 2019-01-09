@@ -56,7 +56,7 @@ def insert_obj(element):
         session.commit()
         flag = True
     except Exception as e:
-        print(e, '\nerror element:' + element.getSelf() + '\t插入数据库失败,请查看主键以及唯一键约束!')
+        print(e, '\nerror element:' + str(element) + '\t插入数据库失败!')
         session.rollback()
         session.flush()  # for resetting non-commited .add()
     finally:
@@ -167,6 +167,19 @@ def query_klines(pair_name, num=1440, endtime = int(time.time())):
         kline_list = session.query(GateKline).filter(and_(GateKline.pair_name == pair_name.upper(),
                                                              GateKline.timestamp <= endtime)).order_by(GateKline.timestamp.desc()).limit(num)
         return kline_list[::-1]
+    return []
+
+def query_all_klines(pair_name):
+    '''
+    :param pair_name:
+    :param num:
+    :param endtime:
+    :return:
+    '''
+    if pair_name is not None:
+        session = DBSession()
+        kline_list = session.query(GateKline).filter(GateKline.pair_name == pair_name.upper()).all()
+        return kline_list
     return []
 
 

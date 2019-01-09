@@ -4,12 +4,13 @@ from dao.Models import GateKline, MyTrade
 
 middle = 1000
 
-short: int = 1000
-long = 14400
+short: int = 600
+long = 6000
 SD = 0.005
 
 
-kline_list = GateDao.query_all_objects(GateKline)
+# kline_list = GateDao.query_all_objects(GateKline)
+kline_list = GateDao.query_all_klines(pair_name='LTC_USDT')
 
 while short > 60:
     while long > short * 2:  # 6000:
@@ -65,7 +66,7 @@ while short > 60:
         if times == 0 or times > 150: break
 
         trade = MyTrade()
-        trade.pair_name = 'EOS_USDT'
+        trade.pair_name = 'LTC_USDT'
         trade.short = short
         trade.long = long
         trade.lucre = asset + coin * nextPrice
@@ -73,8 +74,8 @@ while short > 60:
         GateDao.insert_obj(trade)
         print(f"{kline.timestr} - short : {short:d} -- long : {long:d} === all : {asset + coin * nextPrice:f}")
 
-        long -= 100
+        long -= 60
 
 
     short -= 20
-    long = 14400
+    long = 6000

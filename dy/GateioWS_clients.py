@@ -52,10 +52,10 @@ def on_message(ws, message):
                   result_json['error'])
 
         else:
-            if len(result_json['result']) >= 360:
-                ws.start = ws.start + 21600
+            if len(result_json['result']) >= 500:
+                ws.start = ws.start + 30000
                 send_info = '{"id":%d, "method":"%s", "params":["%s", %d, %d, %d]}' \
-                         % (ws.id, ws.method, ws.pair_name, ws.start, ws.start + 21600, ws.group_sec)
+                         % (ws.id, ws.method, ws.pair_name, ws.start, ws.start + 30000, ws.group_sec)
 
                 print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
                         ws.id , '*',
@@ -85,7 +85,7 @@ def on_error(ws, error):
     ws.reconnect = True
     alert = 'Gate ----- %s ----- 产生错误' % error
     print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) ,alert)
-    pushNotifications.all(alert=alert)
+    # pushNotifications.all(alert=alert)
 
 
 def on_close(ws):
@@ -107,12 +107,13 @@ def on_open(ws):
 
     def send_trhead():
         send_info = '{"id":%d, "method":"%s", "params":["%s", %d, %d, %d]}' \
-                    % (ws.id, ws.method, ws.pair_name, ws.start, ws.start + 21600 - 10, ws.group_sec)
+                    % (ws.id, ws.method, ws.pair_name, ws.start, ws.start + 30000 - 10, ws.group_sec)
         ws.send(send_info)
         alert = 'Gate ----- %s ----- 开启监控' % ws.pair_name
         print(alert)
-        pushNotifications.all(alert=alert)
+        # pushNotifications.all(alert=alert)
 
+    time.sleep(2)
     t = threading.Thread(target=send_trhead)
     t.start()
 
@@ -131,7 +132,7 @@ def on_start(pair_name):
     timestamp = int(time.time())
     ws.id = random.randint(1500000000, timestamp)
     ws.pair_name = pair_name     #'EOS_USDT'
-    ws.start = 1540024773 #timestamp - 216000  # 216000
+    ws.start = 1546790400#timestamp - 2592000  # 300000     1546785780 #
     ws.method = 'kline.query'    # 'kline.subscribe'#
     ws.group_sec = 60
     ws.autosync = True
@@ -150,8 +151,9 @@ from threadpool import ThreadPool, makeRequests
 if __name__ == "__main__":
 
 
-    pool = ThreadPool(5)
-    test = ['EOS_USDT']#['BTC_USDT','EOS_USDT', 'ETH_USDT']
+    pool = ThreadPool(30)
+    test = ['LTC_USDT', 'XRP_USDT', 'XMR_USDT', 'DASH_USDT', 'NEO_USDT', 'TRX_USDT', 'OMG_USDT', 'QTUM_USDT', 'DOGE_USDT', 'EOS_USDT']#
+    # test = ['XMR_USDT', 'DASH_USDT', 'TRX_USDT'] #['EOS_USDT']#
     requests = makeRequests(on_start, test)
     [pool.putRequest(req) for req in requests]
     pool.wait()

@@ -6,7 +6,7 @@ from datetime import datetime
 import pandas as pd
 import seaborn as sns
 
-sns.set_style('white')#设置背景为白色
+sns.set_style('white')  # 设置背景为白色
 
 from dao import GateDao
 from dao.Models import GateKline, MyTrade
@@ -31,7 +31,8 @@ def lucreImage(security, pair_name, isShow=False, window_short=260, window_long=
     # 获取基金行情信息
     # security = get_price(pair_name)
     security['tradeDate'] = pd.to_datetime(security['tradeDate'])
-    print('+++++++++++++++++++++++++++++++++++++++++>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
+    print(
+        '+++++++++++++++++++++++++++++++++++++++++>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
     print(security.info())
 
     # security['closePrice'].plot(grid=False,figsize=(12,8))
@@ -77,7 +78,7 @@ def lucreImage(security, pair_name, isShow=False, window_short=260, window_long=
     security[['Market', 'Strategy']].cumsum().apply(np.exp).plot(grid=False, figsize=(18, 10))
     sns.despine()
 
-    lucre = float(security[['Strategy']].cumsum().apply(np.exp).iat[-1,-1] * 10000)
+    lucre = float(security[['Strategy']].cumsum().apply(np.exp).iat[-1, -1] * 10000)
     new_trade = MyTrade()
     new_trade.pair_name = pair_name
     new_trade.short = window_short
@@ -85,7 +86,7 @@ def lucreImage(security, pair_name, isShow=False, window_short=260, window_long=
     new_trade.middle = 1
     new_trade.lucre = lucre
     new_trade.times = -1 if 'EOS' in pair_name else -2
-    print('========= ' ,new_trade.pair_name, new_trade.lucre)
+    print('========= ', new_trade.pair_name, new_trade.lucre)
     GateDao.insert_obj(new_trade)
 
     pylab.ylim((0.5, 2.0))
@@ -93,19 +94,16 @@ def lucreImage(security, pair_name, isShow=False, window_short=260, window_long=
     textStr = ' pair_name = %s \n num = %d \n window_short = %d \n window_long = %d \n SD = %f \n %.2f' \
               % (pair_name, len(security), window_short, window_long, SD, lucre)
     pylab.text(0, 0.5, textStr, fontsize=15)
-    pylab.savefig('./img/%s_%d_%d_%d_%f_%s.png' % (pair_name, len(security), window_short, window_long, SD, '001' if 'EOS' in pair_name else '002'))
+    pylab.savefig('./img/%s_%d_%d_%d_%f_%s.png' % (
+    pair_name, len(security), window_short, window_long, SD, '001' if 'EOS' in pair_name else '002'))
 
     if isShow: pylab.show()
 
     pylab.close()
 
 
-
-
-
-
-
-pair_list = ['LTC_USDT', 'XRP_USDT', 'XMR_USDT', 'NEO_USDT', 'TRX_USDT', 'OMG_USDT', 'QTUM_USDT', 'DOGE_USDT', 'EOS_USDT']#
+pair_list = ['LTC_USDT', 'XRP_USDT', 'XMR_USDT', 'NEO_USDT', 'TRX_USDT', 'OMG_USDT', 'QTUM_USDT', 'DOGE_USDT',
+             'EOS_USDT']  #
 
 trade_list = GateDao.query_all_objects(MyTrade)
 
@@ -113,5 +111,5 @@ for pair_name in pair_list:
     security = get_price(pair_name)
 
     for trade in trade_list:
-        lucreImage(security, pair_name,  window_short=trade.short, window_long=trade.long)
+        lucreImage(security, pair_name, window_short=trade.short, window_long=trade.long)
 
